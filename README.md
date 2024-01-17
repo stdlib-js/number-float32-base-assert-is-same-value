@@ -35,30 +35,14 @@ limitations under the License.
 
 > Test if two single-precision floating-point numbers are the same value.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/number-float32-base-assert-is-same-value
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var isSameValuef = require( '@stdlib/number-float32-base-assert-is-same-value' );
+import isSameValuef from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-assert-is-same-value@deno/mod.js';
 ```
 
 #### isSameValuef( a, b )
@@ -66,7 +50,7 @@ var isSameValuef = require( '@stdlib/number-float32-base-assert-is-same-value' )
 Tests if two single-precision floating-point numbers `a` and `b` are the same value.
 
 ```javascript
-var toFloat32 = require( '@stdlib/number-float64-base-to-float32' );
+import toFloat32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@deno/mod.js';
 
 var bool = isSameValuef( toFloat32( 3.14 ), toFloat32( 3.14 ) );
 // returns true
@@ -117,8 +101,8 @@ bool = isSameValuef( NaN, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var toFloat32 = require( '@stdlib/number-float64-base-to-float32' );
-var isSameValuef = require( '@stdlib/number-float32-base-assert-is-same-value' );
+import toFloat32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@deno/mod.js';
+import isSameValuef from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-assert-is-same-value@deno/mod.js';
 
 var bool = isSameValuef( toFloat32( 3.14 ), toFloat32( 3.14 ) );
 // returns true
@@ -139,106 +123,7 @@ bool = isSameValuef( toFloat32( NaN ), toFloat32( NaN ) );
 
 <!-- C interface documentation. -->
 
-* * *
 
-<section class="c">
-
-## C APIs
-
-<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
-
-<section class="intro">
-
-</section>
-
-<!-- /.intro -->
-
-<!-- C usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```c
-#include "stdlib/number/float32/base/assert/is_same_value.h"
-```
-
-#### stdlib_base_float32_is_same_value( a, b )
-
-Tests if two single-precision floating-point numbers `a` and `b` are the same value.
-
-```c
-#include <stdbool.h>
-
-bool v = stdlib_base_float32_is_same_value( 3.14f, 3.14f );
-// returns true
-
-v = stdlib_base_float32_is_same_value( 0.0f, -0.0f );
-// returns false
-```
-
-The function accepts the following arguments:
-
--   **a**: `[in] float` first input value.
--   **b**: `[in] float` second input value.
-
-```c
-bool stdlib_base_float32_is_same_value( const float a, const float b );
-```
-
-</section>
-
-<!-- /.usage -->
-
-<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="notes">
-
-</section>
-
-<!-- /.notes -->
-
-<!-- C API usage examples. -->
-
-<section class="examples">
-
-### Examples
-
-```c
-#include "stdlib/number/float32/base/assert/is_same_value.h"
-#include <stdbool.h>
-#include <stdio.h>
-
-int main( void ) {
-    const float a[] = {
-        5.0f,
-        -2.0f,
-        0.0f,
-        0.0f/0.0f
-    };
-    const float b[] = {
-        5.0f,
-        2.0f,
-        -0.0f,
-        0.0f/0.0f
-    };
-
-    bool v;
-    int i;
-    for ( i = 0; i < 4; i++ ) {
-        v = stdlib_base_float32_is_same_value( a[ i ], b[ i ] );
-        printf( "Same value? %s\n", ( v ) ? "True" : "False" );
-    }
-}
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -257,7 +142,7 @@ int main( void ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
