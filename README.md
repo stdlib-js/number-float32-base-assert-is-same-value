@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isSameValuef from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-assert-is-same-value@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/number-float32-base-assert-is-same-value/tags). For example,
+
+```javascript
 import isSameValuef from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-assert-is-same-value@v0.1.0-deno/mod.js';
 ```
 
@@ -102,7 +107,7 @@ bool = isSameValuef( NaN, NaN );
 
 ```javascript
 import toFloat32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@deno/mod.js';
-import isSameValuef from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-assert-is-same-value@v0.1.0-deno/mod.js';
+import isSameValuef from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-assert-is-same-value@deno/mod.js';
 
 var bool = isSameValuef( toFloat32( 3.14 ), toFloat32( 3.14 ) );
 // returns true
