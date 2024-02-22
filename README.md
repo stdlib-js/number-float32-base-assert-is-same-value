@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isSameValuef from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-assert-is-same-value@deno/mod.js';
+import isSameValuef from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-assert-is-same-value@v0.2.1-deno/mod.js';
 ```
 
 #### isSameValuef( a, b )
@@ -102,7 +102,7 @@ bool = isSameValuef( NaN, NaN );
 
 ```javascript
 import toFloat32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@deno/mod.js';
-import isSameValuef from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-assert-is-same-value@deno/mod.js';
+import isSameValuef from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-assert-is-same-value@v0.2.1-deno/mod.js';
 
 var bool = isSameValuef( toFloat32( 3.14 ), toFloat32( 3.14 ) );
 // returns true
