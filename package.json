@@ -41,19 +41,19 @@
   },
   "dependencies": {
     "@stdlib/napi-argv": "^0.2.2",
-    "@stdlib/napi-argv-float": "^0.2.1",
+    "@stdlib/napi-argv-float": "^0.2.2",
     "@stdlib/napi-export": "^0.2.2",
-    "@stdlib/utils-library-manifest": "^0.2.1"
+    "@stdlib/utils-library-manifest": "^0.2.2"
   },
   "devDependencies": {
     "@stdlib/assert-is-boolean": "^0.2.2",
     "@stdlib/boolean-ctor": "^0.2.2",
-    "@stdlib/number-float64-base-to-float32": "^0.2.1",
+    "@stdlib/number-float64-base-to-float32": "^0.2.2",
     "@stdlib/utils-try-require": "^0.2.2",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.1"
+    "@stdlib/bench-harness": "^0.2.2"
   },
   "engines": {
     "node": ">=0.10.0",
