@@ -29,7 +29,7 @@ limitations under the License.
   <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
 </details>
 
-# isSameValuef
+# isSameValue
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
@@ -60,41 +60,41 @@ To view installation and usage instructions specific to each branch build, be su
 ## Usage
 
 ```javascript
-var isSameValuef = require( '@stdlib/number-float32-base-assert-is-same-value' );
+var isSameValue = require( '@stdlib/number-float32-base-assert-is-same-value' );
 ```
 
-#### isSameValuef( a, b )
+#### isSameValue( a, b )
 
 Tests if two single-precision floating-point numbers `a` and `b` are the same value.
 
 ```javascript
 var toFloat32 = require( '@stdlib/number-float64-base-to-float32' );
 
-var bool = isSameValuef( toFloat32( 3.14 ), toFloat32( 3.14 ) );
+var bool = isSameValue( toFloat32( 3.14 ), toFloat32( 3.14 ) );
 // returns true
 
-bool = isSameValuef( toFloat32( 5.0 ), toFloat32( 3.0 ) );
+bool = isSameValue( toFloat32( 5.0 ), toFloat32( 3.0 ) );
 // returns false
 ```
 
 In contrast to the strict equality operator `===`, the function distinguishes between `+0` and `-0` and treats `NaNs` as the same value.
 
-<!-- eslint-disable no-compare-neg-zero, use-isnan -->
+<!-- eslint-disable no-compare-neg-zero, use-isnan, @cspell/spellchecker -->
 
 ```javascript
 var bool = ( 0.0 === -0.0 );
 // returns true
 
-bool = isSameValuef( 0.0, -0.0 );
+bool = isSameValue( 0.0, -0.0 );
 // returns false
 
-bool = isSameValuef( -0.0, -0.0 );
+bool = isSameValue( -0.0, -0.0 );
 // returns true
 
 bool = ( NaN === NaN );
 // returns false
 
-bool = isSameValuef( NaN, NaN );
+bool = isSameValue( NaN, NaN );
 // returns true
 ```
 
@@ -120,18 +120,18 @@ bool = isSameValuef( NaN, NaN );
 
 ```javascript
 var toFloat32 = require( '@stdlib/number-float64-base-to-float32' );
-var isSameValuef = require( '@stdlib/number-float32-base-assert-is-same-value' );
+var isSameValue = require( '@stdlib/number-float32-base-assert-is-same-value' );
 
-var bool = isSameValuef( toFloat32( 3.14 ), toFloat32( 3.14 ) );
+var bool = isSameValue( toFloat32( 3.14 ), toFloat32( 3.14 ) );
 // returns true
 
-bool = isSameValuef( toFloat32( 0.0 ), toFloat32( 0.0 ) );
+bool = isSameValue( toFloat32( 0.0 ), toFloat32( 0.0 ) );
 // returns true
 
-bool = isSameValuef( toFloat32( -0.0 ), toFloat32( 0.0 ) );
+bool = isSameValue( toFloat32( -0.0 ), toFloat32( 0.0 ) );
 // returns false
 
-bool = isSameValuef( toFloat32( NaN ), toFloat32( NaN ) );
+bool = isSameValue( toFloat32( NaN ), toFloat32( NaN ) );
 // returns true
 ```
 
@@ -269,11 +269,6 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
-## License
-
-See [LICENSE][stdlib-license].
-
-
 ## Copyright
 
 Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
@@ -319,8 +314,6 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/number-float32-base-assert-is-same-value/tree/esm
 [esm-readme]: https://github.com/stdlib-js/number-float32-base-assert-is-same-value/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/number-float32-base-assert-is-same-value/blob/main/branches.md
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/number-float32-base-assert-is-same-value/main/LICENSE
 
 [ecma-262-same-value-algorithm]: http://ecma-international.org/ecma-262/5.1/#sec-9.12
 
