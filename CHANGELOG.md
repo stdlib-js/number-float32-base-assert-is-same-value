@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-17)
+## Unreleased (2026-01-26)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`f693285`](https://github.com/stdlib-js/stdlib/commit/f69328578f728111a8993e9fae78c7aef0a7143f) - **bench:** refactor to use string interpolation in `number/float32/base/assert` [(#9910)](https://github.com/stdlib-js/stdlib/pull/9910) _(by Lokesh Ranjan)_
 -   [`3c46f07`](https://github.com/stdlib-js/stdlib/commit/3c46f07d2c590556429155a4265bd4be82a47e4d) - **chore:** rename variable _(by Athan Reines)_
 -   [`6eee151`](https://github.com/stdlib-js/stdlib/commit/6eee15199727d04e3757e66f38384e97b8a333da) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
 -   [`2777e4b`](https://github.com/stdlib-js/stdlib/commit/2777e4be161869d09406e3b17947d24c64b47af2) - **bench:** resolve lint errors in benchmarks _(by Athan Reines)_
@@ -26,9 +27,10 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Lokesh Ranjan
 -   Philipp Burckhardt
 
 </section>
