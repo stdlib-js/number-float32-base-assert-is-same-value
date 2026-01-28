@@ -1,34 +1,5 @@
+"use strict";var i=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var u=i(function(f,t){
+function s(e,r){return e===r?e===0?1/e===1/r:!0:e!==e&&r!==r}t.exports=s
+});var n=u();module.exports=n;
 /** @license Apache-2.0 */
-
-'use strict';
-
-/**
-* Test if two single-precision floating-point numbers are the same value.
-*
-* @module @stdlib/number-float32-base-assert-is-same-value
-*
-* @example
-* var toFloat32 = require( '@stdlib/number-float64-base-to-float32' );
-* var isSameValue = require( '@stdlib/number-float32-base-assert-is-same-value' );
-*
-* var bool = isSameValue( toFloat32( 3.14 ), toFloat32( 3.14 ) );
-* // returns true
-*
-* bool = isSameValue( toFloat32( -0.0 ), toFloat32( -0.0 ) );
-* // returns true
-*
-* bool = isSameValue( toFloat32( -0.0 ), toFloat32( 0.0 ) );
-* // returns false
-*
-* bool = isSameValue( toFloat32( NaN ), toFloat32( NaN ) );
-* // returns true
-*/
-
-// MODULES //
-
-var main = require( './main.js' );
-
-
-// EXPORTS //
-
-module.exports = main;
+//# sourceMappingURL=index.js.map
