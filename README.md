@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isSameValue from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-assert-is-same-value@esm/index.mjs';
+import isSameValue from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-assert-is-same-value@v0.2.3-esm/index.mjs';
 ```
 
 #### isSameValue( a, b )
@@ -107,7 +107,7 @@ bool = isSameValue( NaN, NaN );
 <script type="module">
 
 import toFloat32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@esm/index.mjs';
-import isSameValue from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-assert-is-same-value@esm/index.mjs';
+import isSameValue from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-assert-is-same-value@v0.2.3-esm/index.mjs';
 
 var bool = isSameValue( toFloat32( 3.14 ), toFloat32( 3.14 ) );
 // returns true
