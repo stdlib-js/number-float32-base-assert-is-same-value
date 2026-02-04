@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/number-float32-base-assert-is-same-value",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Test if two single-precision floating-point numbers are the same value.",
   "license": "Apache-2.0",
   "author": {
